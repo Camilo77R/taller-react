@@ -1,4 +1,5 @@
 import Ejercicio1 from "./Ejercicio1"
+import CalcularEdad from "./CalcularEdad"
 function App() {
 
 
@@ -6,6 +7,10 @@ function App() {
   return (
     <>
       <Ejercicio1  ciudad="Popayan" nombre="Camilo" anio="2026"></Ejercicio1>
+
+      <CalcularEdad anioNacimiento={2002}></CalcularEdad>
+      <CalcularEdad anioNacimiento={1984}></CalcularEdad>
+      <CalcularEdad anioNacimiento={1997}></CalcularEdad>
     </>
   )
 }

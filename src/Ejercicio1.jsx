@@ -2,10 +2,11 @@
 // una frase en JSX usando template string: “Hola, soy ___ de ___ y estamos en
 // ___”.
 function Ejercicio1 ({nombre, ciudad, anio}){
-    console.log(nombre, ciudad, anio)
+    
+    const frase = `Hola, soy ${nombre} de ${ciudad} y estamos en ${anio}`
     return(
         <>
-            <p>Hola,soy {nombre} de {ciudad} y estamos en {anio}</p>
+            <p>{frase}</p>
         </>
     )
 }

@@ -21,3 +21,10 @@
     color: #27ae60;
     font-weight: bold;
 }
+
+.estado {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #000000;
+}

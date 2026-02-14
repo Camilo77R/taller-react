@@ -1,5 +1,6 @@
 import Ejercicio1 from "./Ejercicio1"
 import CalcularEdad from "./CalcularEdad"
+import MensajeEstado from "./MensajeEstado"
 function App() {
 
 
@@ -11,6 +12,10 @@ function App() {
       <CalcularEdad anioNacimiento={2002}></CalcularEdad>
       <CalcularEdad anioNacimiento={1984}></CalcularEdad>
       <CalcularEdad anioNacimiento={1997}></CalcularEdad>
+
+
+      <MensajeEstado activo={true}></MensajeEstado>
+      <MensajeEstado activo={false}></MensajeEstado>
     </>
   )
 }

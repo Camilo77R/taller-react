@@ -3,6 +3,9 @@ import CalcularEdad from "./CalcularEdad"
 import MensajeEstado from "./MensajeEstado"
 import Productos from "./Productos"
 import SaludoUsuario from "./SaludoUsuario"
+
+import Perfil from "./Perfil"
+
 function App() {
 
 
@@ -26,6 +29,10 @@ function App() {
       <SaludoUsuario nombre="Lucas" mensaje="Hola"></SaludoUsuario>
       <SaludoUsuario  mensaje="Hola" nombre="Combinacion 2"></SaludoUsuario>
       <SaludoUsuario  mensaje="Hola" nombre="Combinacion #3"></SaludoUsuario>
+
+
+      <Perfil nombre="Luis" edad="23" ciudad="Cali"></Perfil>
+      <Perfil nombre="Luis" edad="23" ></Perfil>
     </>
   )
 }

@@ -2,6 +2,7 @@ import Ejercicio1 from "./Ejercicio1"
 import CalcularEdad from "./CalcularEdad"
 import MensajeEstado from "./MensajeEstado"
 import Productos from "./Productos"
+import SaludoUsuario from "./SaludoUsuario"
 function App() {
 
 
@@ -19,8 +20,12 @@ function App() {
       <MensajeEstado activo={false}></MensajeEstado>
 
 
-
       <Productos></Productos>
+
+
+      <SaludoUsuario nombre="Lucas" mensaje="Hola"></SaludoUsuario>
+      <SaludoUsuario  mensaje="Hola" nombre="Combinacion 2"></SaludoUsuario>
+      <SaludoUsuario  mensaje="Hola" nombre="Combinacion #3"></SaludoUsuario>
     </>
   )
 }

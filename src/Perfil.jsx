@@ -3,15 +3,27 @@
 // registrada” usando `
 
 
-function Perfil({nombre, edad, ciudad}){
-    if(ciudad === undefined  || ciudad === null){
-        ciudad = "ciudad no registrada"
-    }
+// 8. Cree variables logueado y rol (por ejemplo: "admin", "user"). Muestre: si no
+// está logueado → “Inicie sesión”; si está logueado y rol es "admin" → “Panel
+// Admin”; si está logueado y rol es "user" → “Panel Usuario”. Use ternario
+// anidado o una lógica equivalente.
 
-    const message = `Mi nombre es ${nombre}, tengo ${edad} años y soy de ${ciudad}`
+
+
+function Perfil({nombre, edad, ciudad}){
+    let rol = "admin"    
+    let estaLogueado = true
+
+    const usuarioDelSistema = !estaLogueado ? "Inicie sesión" : 
+    rol.toLocaleLowerCase() === "admin" ? "Panel Admin" : 
+    rol.toLocaleLowerCase() === "user" ? "Panel Usuario" : 
+    "Rol desconocido"
+
     return(
         <>
-            <h3> {message} </h3>
+            <h3>Mi nombre es {nombre}, tengo {edad} años y soy de {ciudad ? ciudad : "Ciudad no registrada"}</h3> 
+        
+            <h4>{usuarioDelSistema}</h4>
         </>
     )
 }

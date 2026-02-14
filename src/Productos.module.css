@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.tarjeta {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    min-width: 250px;
+}
+
+.titulo {
+    margin: 0 0 10px 0;
+    color: #333;
+}
+
+.precio {
+    color: #27ae60;
+    font-weight: bold;
+}

@@ -16,14 +16,14 @@ function MostrarNotificaciones (){
 
     return (
         <>
-            <h4>{verNotificacion && notificacionesArray.length > 0 ? 
+            {verNotificacion && notificacionesArray.length > 0 ? 
             
             notificacionesArray.map((notificacion , i)=>(
 
                 <p key={i}> {notificacion}</p>
             )): "!No hay notificaciones!"
         
-            }</h4>
+            }
         </>
     )
 } 

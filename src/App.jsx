@@ -5,6 +5,7 @@ import Productos from "./Productos"
 import SaludoUsuario from "./SaludoUsuario"
 import Perfil from "./Perfil"
 import MostrarNotificaciones from "./MostrarNotificaciones"
+import ListaUsuarios from "./ListaUsuarios"
 import './App.css'
 
 function App() {
@@ -52,6 +53,12 @@ function App() {
       <div className="ejercicio">
         <h2>Ejercicio 9 Mostrar notificaciones</h2>
           <MostrarNotificaciones></MostrarNotificaciones>
+      </div>
+
+
+      <div className="ejercicio">
+        <h2>Ejercicio 10 Tarjeta Usurio</h2>
+          <ListaUsuarios></ListaUsuarios>
       </div>
     </div>
   )
